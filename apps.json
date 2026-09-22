@@ -5,37 +5,31 @@
       {
         "name": "Ms Store",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mstore2.png",
-        "size": "12.6 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/mstore.apk"
       },
       {
         "name": "DL Store",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/dlstore.png",
-        "size": "3.96 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/DL%20Store.apk"
       },
       {
         "name": "Đông Anh Store",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/dastore.png",
-        "size": "3 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/DongAnhStore.apk"
       },
       {
         "name": "Smihome Store",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/smihomestore.png",
-        "size": "3.61 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/SMihomeStore.apk"
       },
       {
         "name": "Movie Legend Store",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mlstore.png",
-        "size": "2.96 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/mlstore.apk"
       },
       {
         "name": "Beecube Store",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/beecube.png",
-        "size": "7 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/Beecube%20Store_1.apk"
       }
     ]
@@ -47,25 +41,21 @@
       {
         "name": "TizenTube TV Quốc Tế",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
-        "size": "39 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/TizenTube.apk"
       },
       {
         "name": "YouTube TV Nội Địa",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
-        "size": "16 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/youtube.apk"
       },
       {
         "name": "SmartTube",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/smarttube.png",
-        "size": "33.2 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/smarttube.apk"
       },
       {
         "name": "YouTube TV Adr5-6 ",
           "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
-        "size": "14 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/youtube-adr5-6.apk"
       }     
     ]
@@ -77,49 +67,41 @@
       {
         "name": "MiHD TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mihdtv.png",
-        "size": "19 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/MiHDTV.apk"
       },
       {
         "name": "MiHDTV Google TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/miggtv.png",
-        "size": "9 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/miggtv.apk"
       },
       {
         "name": "Mi Pro TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/miprotv.png",
-        "size": "17 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/miprotv.apk"
       },
       {
         "name": "XemTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/xemtv.png",
-        "size": "6 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/XemTV_v5.8.8.apk"
       },
       {
         "name": "VietPlayTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/vietplay.png",
-        "size": "10 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/vietplay.apk"
       },
       {
         "name": "FPT Play",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/fpt.png",
-        "size": "88 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/fptplay.apk"
       },
       {
         "name": "Super OK",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/super.png",
-        "size": "59 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/SuperOKv1.9.apk"
       },
       {
         "name": "M3U-Adr5",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/m3u.png",
-        "size": " MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/m3u.apk"
       }
     ]
@@ -131,43 +113,36 @@
       {
         "name": "Phim 4K",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/phim4k.png",
-        "size": "15 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/phim4k.apk"
       },
       {
         "name": "SaiGon Phim",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/saigon.png",
-        "size": "70 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/SaiGonPhim.apk"
       },
       {
         "name": "Chợ Phim",
          "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/chophim.png",
-        "size": "3.8 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/chophim.apk"
       },
       {
         "name": "Hi Phim TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/hiphim.png",
-        "size": "6 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/hiphimtv.apk"
       },
       {
         "name": "Nét Căng TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/netcang.png",
-        "size": "14 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/N%C3%A9t%20C%C4%83ng.apk"
       },
       {
         "name": "Netflix (Cần sử dụng chuột)",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/netflix.png",
-        "size": "70 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/netflix.apk"
       },
       {
         "name": "Tiktok AndroidTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/tiktok.png",
-        "size": "28 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/tiktoklite.apk"
       }
     ]
@@ -179,31 +154,26 @@
       {
         "name": "Get Out",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/getout.png",
-        "size": "14 MB",
         "file": "https://github.com/guiterhd-bit/mihdtv/raw/refs/heads/main/getout.apk"
       },
       {
         "name": "Lập Tình TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/laptinh.png",
-        "size": "9 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/laptinhtv.apk"
       },
       {
         "name": "HongTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/hongtv.png",
-        "size": "24 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/hongtv.apk"
       },
       {
         "name": "SportZx",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/sportzx.png",
-        "size": "20 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/spzx.apk"
       },
       {
         "name": "Crexify TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/crefity.png",
-        "size": "11 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/CrexiFyTV.apk"
       }
     ]
@@ -215,19 +185,16 @@
       {
         "name": "Imou TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/imou.png",
-        "size": "72 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/imou.apk"
       },
       {
         "name": "Yoosee TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/yoosee.png",
-        "size": "130 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/yoosee.apk"
       },
       {
         "name": "Ezviz TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/ezviz.png",
-        "size": "87 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/ezviz.apk"
       }
     ]
@@ -239,43 +206,36 @@
       {
         "name": "Scanner Bluetooth",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/blt.png",
-        "size": "27 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/BluetoothScanner.apk"
       },
       {
         "name": "MiHD Cleaner",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/tv_banner_art.png",
-        "size": "1 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/micleaner.apk"
       },
       {
         "name": "Projectivy Launcher",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/project.png",
-        "size": "16 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/project.apk"
       },
       {
         "name": "Mix Plorer",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mix.png",
-        "size": "16 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/mix.apk"
       },
       {
         "name": "Cốc Cốc TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/coccoc.png",
-        "size": "86 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/coccoc.apk"
       },
       {
         "name": "Zoom TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/zoom.png",
-        "size": "16 MB",
         "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/Zoom.apk"
       },
       {
         "name": "Super Voice",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/supervoice.png",
-        "size": "16 MB",
         "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/supervoice.apk"
       }
     ]
