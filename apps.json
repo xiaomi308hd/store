@@ -46,7 +46,7 @@
       {
         "name": "YouTube TV Nội Địa",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
-        "file": "https://github.com/guiterhd-bit/Xiaomi-H-i-D-ng/raw/refs/heads/main/youtube.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/youtube.apk"
       },
       {
         "name": "SmartTube",
@@ -56,7 +56,7 @@
       {
         "name": "YouTube TV Adr5-6 ",
           "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/youtube-adr5-6.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/youtube-adr5-6.apk"
       }     
     ]
   },
@@ -67,27 +67,27 @@
       {
         "name": "MiHD TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mihdtv.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/MiHDTV.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/MiHDTV.apk"
       },
       {
         "name": "MiHDTV Google TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/miggtv.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/miggtv.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/miggtv.apk"
       },
       {
         "name": "Mi Pro TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/miprotv.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/miprotv.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/miprotv.apk"
       },
       {
         "name": "XemTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/xemtv.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/XemTV_v5.8.8.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/XemTV_v5.8.8.apk"
       },
       {
         "name": "VietPlayTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/vietplay.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/vietplay.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vietplay.apk"
       },
       {
         "name": "FPT Play",
@@ -102,7 +102,7 @@
       {
         "name": "M3U-Adr5",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/m3u.png",
-        "file": "https://github.com/guiterhd-bit/direct-link/raw/refs/heads/main/m3u.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/m3u.apk"
       }
     ]
   },
