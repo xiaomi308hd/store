@@ -204,11 +204,6 @@
     "category": "⚙️ Ứng dụng Tiện Ích",
     "apps": [
       {
-        "name": "Scanner Bluetooth",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/blt.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/BluetoothScanner.apk"
-      },
-      {
         "name": "MiHD Cleaner",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/tv_banner_art.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/micleaner.apk"
@@ -222,6 +217,11 @@
         "name": "Mix Plorer",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mix.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/mix.apk"
+      },
+      {
+        "name": "Scanner Bluetooth",
+        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/blt.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/BluetoothScanner.apk"
       },
       {
         "name": "Cốc Cốc TV",
@@ -280,7 +280,7 @@
         "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338400_7929906606184301816_7929906606184301816_eea463f199f0719172166b129cc69d91.jpg"
       },
        {
-        "name": "Ảnh 7",
+        "name": "Ảnh 8",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/la co VN.png",
         "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/la co VN.png"
       }
