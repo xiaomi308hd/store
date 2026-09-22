@@ -55,7 +55,7 @@ function escapeAttribute(value) {
 
 
 // ==============================
-// Kiểm tra có phải ảnh nền không
+// Kiểm tra danh mục ảnh nền
 // ==============================
 
 function isWallpaperCategory(category) {
@@ -65,7 +65,9 @@ function isWallpaperCategory(category) {
     }
 
     const name =
-        String(category).toLowerCase();
+        String(category)
+            .toLowerCase()
+            .trim();
 
     return (
         name.includes("ảnh nền") ||
@@ -76,167 +78,26 @@ function isWallpaperCategory(category) {
 
 
 // ==============================
-// Lấy tên file từ URL
+// Kiểm tra link ảnh
 // ==============================
 
-function getFileName(url) {
-
-    try {
-
-        const cleanURL =
-            url.split("?")[0];
-
-        const parts =
-            cleanURL.split("/");
-
-        const fileName =
-            parts[parts.length - 1];
-
-        if (fileName) {
-            return decodeURIComponent(fileName);
-        }
-
-    } catch (error) {
-
-        console.error(
-            "Không lấy được tên file:",
-            error
-        );
-    }
-
-    return "wallpaper.jpg";
-}
-
-
-// ==============================
-// Tải ảnh nền trực tiếp
-// ==============================
-
-async function downloadWallpaper(url, button) {
+function isImageFile(url) {
 
     if (!url) {
-
-        alert(
-            "Ảnh nền này chưa có liên kết tải xuống."
-        );
-
-        return;
+        return false;
     }
 
+    const cleanURL =
+        String(url)
+            .split("?")[0]
+            .toLowerCase();
 
-    // Lưu nội dung nút
-
-    const originalText =
-        button.innerHTML;
-
-
-    try {
-
-        // Trạng thái đang tải
-
-        button.innerHTML =
-            "⏳ Đang tải...";
-
-        button.style.pointerEvents =
-            "none";
-
-
-        // ==========================
-        // Tải file ảnh
-        // ==========================
-
-        const response =
-            await fetch(url);
-
-
-        if (!response.ok) {
-
-            throw new Error(
-                `HTTP ${response.status}`
-            );
-        }
-
-
-        // ==========================
-        // Chuyển thành Blob
-        // ==========================
-
-        const blob =
-            await response.blob();
-
-
-        // ==========================
-        // Tạo URL tạm
-        // ==========================
-
-        const blobURL =
-            URL.createObjectURL(blob);
-
-
-        // ==========================
-        // Tạo link tải
-        // ==========================
-
-        const link =
-            document.createElement("a");
-
-        link.href =
-            blobURL;
-
-        link.download =
-            getFileName(url);
-
-
-        // Thêm vào DOM
-
-        document.body.appendChild(link);
-
-
-        // Tự động click
-
-        link.click();
-
-
-        // Xóa link
-
-        document.body.removeChild(link);
-
-
-        // Giải phóng bộ nhớ
-
-        setTimeout(function () {
-
-            URL.revokeObjectURL(
-                blobURL
-            );
-
-        }, 1000);
-
-
-    } catch (error) {
-
-        console.error(
-            "Không thể tải ảnh nền:",
-            error
-        );
-
-
-        alert(
-            "Không thể tải ảnh nền. Vui lòng thử lại."
-        );
-
-
-    } finally {
-
-        // Khôi phục nút
-
-        button.innerHTML =
-            originalText;
-
-        button.style.pointerEvents =
-            "";
-
-    }
+    return (
+        cleanURL.endsWith(".jpg") ||
+        cleanURL.endsWith(".jpeg") ||
+        cleanURL.endsWith(".png") ||
+        cleanURL.endsWith(".webp")
+    );
 }
 
 
@@ -262,7 +123,15 @@ function createAppCard(app, wallpaper = false) {
 
 
     // ==========================
-    // Tên nút
+    // Kiểm tra link
+    // ==========================
+
+    const file =
+        app.file || "";
+
+
+    // ==========================
+    // Nội dung nút
     // ==========================
 
     const buttonText =
@@ -298,9 +167,13 @@ function createAppCard(app, wallpaper = false) {
 
             <a
                 class="download"
-                href="${escapeAttribute(app.file || "#")}"
-                target="_blank"
-                rel="noopener noreferrer">
+                href="${escapeAttribute(file || "#")}"
+                ${wallpaper
+                    ? ""
+                    : 'target="_blank" rel="noopener noreferrer"'}
+                ${wallpaper
+                    ? 'download'
+                    : ''}>
 
                 ${buttonText}
 
@@ -323,7 +196,7 @@ function createAppCard(app, wallpaper = false) {
 
 
     // ==========================
-    // Xử lý ảnh lỗi
+    // Xử lý ảnh thumbnail lỗi
     // ==========================
 
     image.addEventListener(
@@ -349,9 +222,11 @@ function createAppCard(app, wallpaper = false) {
 
     downloadButton.addEventListener(
         "click",
-        async function (event) {
+        function (event) {
 
+            // ==========================
             // Không có link
+            // ==========================
 
             if (!app.file) {
 
@@ -368,34 +243,35 @@ function createAppCard(app, wallpaper = false) {
 
 
             // ==========================
-            // Nếu là ảnh nền
+            // Ảnh nền
             // ==========================
 
             if (wallpaper) {
 
-                // Không cho mở link
-
-                event.preventDefault();
-
-
-                // Tải trực tiếp
-
-                await downloadWallpaper(
-                    app.file,
-                    downloadButton
-                );
-
+                /*
+                 * KHÔNG dùng:
+                 * fetch()
+                 * Blob
+                 * URL.createObjectURL()
+                 *
+                 * Android TV Downloader sẽ nhận
+                 * URL file trực tiếp.
+                 */
 
                 return;
             }
 
 
             // ==========================
-            // Nếu là ứng dụng
+            // Ứng dụng
             // ==========================
 
-            // Không preventDefault
-            // để trình duyệt mở link bình thường
+            /*
+             * Không preventDefault().
+             *
+             * Trình duyệt sẽ mở link APK
+             * trong tab/cửa sổ mới.
+             */
 
         }
     );
@@ -433,7 +309,7 @@ function renderApps(data) {
 
 
         // ==========================
-        // Kiểm tra category ảnh nền
+        // Kiểm tra danh mục ảnh nền
         // ==========================
 
         const wallpaper =
@@ -499,7 +375,7 @@ function renderApps(data) {
 
 
         // ==========================
-        // Thêm category
+        // Chỉ thêm category có app
         // ==========================
 
         if (
@@ -516,7 +392,7 @@ function renderApps(data) {
 
 
     // ==============================
-    // Không tìm thấy ứng dụng
+    // Không tìm thấy
     // ==============================
 
     if (!hasResult) {
@@ -563,7 +439,7 @@ if (searchInput) {
 
 
             // ==========================
-            // Không nhập từ khóa
+            // Không có từ khóa
             // ==========================
 
             if (keyword === "") {
@@ -577,7 +453,7 @@ if (searchInput) {
 
 
             // ==========================
-            // Lọc ứng dụng
+            // Lọc dữ liệu
             // ==========================
 
             const filtered =
@@ -599,7 +475,8 @@ if (searchInput) {
                                             const name =
                                                 String(
                                                     app.name || ""
-                                                ).toLowerCase();
+                                                )
+                                                .toLowerCase();
 
                                             return name.includes(
                                                 keyword
@@ -614,6 +491,10 @@ if (searchInput) {
                     }
                 );
 
+
+            // ==========================
+            // Hiển thị kết quả
+            // ==========================
 
             renderApps(
                 filtered
@@ -683,7 +564,7 @@ async function loadApps() {
 
 
         // ==========================
-        // Kiểm tra cấu trúc
+        // Kiểm tra cấu trúc JSON
         // ==========================
 
         if (Array.isArray(json)) {
@@ -715,7 +596,7 @@ async function loadApps() {
 
 
         // ==========================
-        // Hiển thị
+        // Hiển thị ứng dụng
         // ==========================
 
         renderApps(
