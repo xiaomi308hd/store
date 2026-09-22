@@ -9,14 +9,12 @@ const container = document.getElementById("appContainer");
 const searchInput = document.getElementById("search");
 
 
-
 // ==============================
 // Thumbnail mặc định
 // ==============================
 
 const DEFAULT_THUMBNAIL =
     "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mstore2.png";
-
 
 
 // ==============================
@@ -38,7 +36,6 @@ function escapeHTML(value) {
 }
 
 
-
 // ==============================
 // Escape Attribute
 // ==============================
@@ -57,37 +54,202 @@ function escapeAttribute(value) {
 }
 
 
-
 // ==============================
-// Tạo App ID
+// Kiểm tra có phải ảnh nền không
 // ==============================
 
-function getAppId(app) {
+function isWallpaperCategory(category) {
 
-    if (app.id) {
-        return String(app.id);
+    if (!category) {
+        return false;
     }
 
-    return String(app.name || "app")
-        .toLowerCase()
-        .trim()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/^-+|-+$/g, "");
+    const name =
+        String(category).toLowerCase();
+
+    return (
+        name.includes("ảnh nền") ||
+        name.includes("hình nền") ||
+        name.includes("wallpaper")
+    );
 }
 
+
+// ==============================
+// Lấy tên file từ URL
+// ==============================
+
+function getFileName(url) {
+
+    try {
+
+        const cleanURL =
+            url.split("?")[0];
+
+        const parts =
+            cleanURL.split("/");
+
+        const fileName =
+            parts[parts.length - 1];
+
+        if (fileName) {
+            return decodeURIComponent(fileName);
+        }
+
+    } catch (error) {
+
+        console.error(
+            "Không lấy được tên file:",
+            error
+        );
+    }
+
+    return "wallpaper.jpg";
+}
+
+
+// ==============================
+// Tải ảnh nền trực tiếp
+// ==============================
+
+async function downloadWallpaper(url, button) {
+
+    if (!url) {
+
+        alert(
+            "Ảnh nền này chưa có liên kết tải xuống."
+        );
+
+        return;
+    }
+
+
+    // Lưu nội dung nút
+
+    const originalText =
+        button.innerHTML;
+
+
+    try {
+
+        // Trạng thái đang tải
+
+        button.innerHTML =
+            "⏳ Đang tải...";
+
+        button.style.pointerEvents =
+            "none";
+
+
+        // ==========================
+        // Tải file ảnh
+        // ==========================
+
+        const response =
+            await fetch(url);
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                `HTTP ${response.status}`
+            );
+        }
+
+
+        // ==========================
+        // Chuyển thành Blob
+        // ==========================
+
+        const blob =
+            await response.blob();
+
+
+        // ==========================
+        // Tạo URL tạm
+        // ==========================
+
+        const blobURL =
+            URL.createObjectURL(blob);
+
+
+        // ==========================
+        // Tạo link tải
+        // ==========================
+
+        const link =
+            document.createElement("a");
+
+        link.href =
+            blobURL;
+
+        link.download =
+            getFileName(url);
+
+
+        // Thêm vào DOM
+
+        document.body.appendChild(link);
+
+
+        // Tự động click
+
+        link.click();
+
+
+        // Xóa link
+
+        document.body.removeChild(link);
+
+
+        // Giải phóng bộ nhớ
+
+        setTimeout(function () {
+
+            URL.revokeObjectURL(
+                blobURL
+            );
+
+        }, 1000);
+
+
+    } catch (error) {
+
+        console.error(
+            "Không thể tải ảnh nền:",
+            error
+        );
+
+
+        alert(
+            "Không thể tải ảnh nền. Vui lòng thử lại."
+        );
+
+
+    } finally {
+
+        // Khôi phục nút
+
+        button.innerHTML =
+            originalText;
+
+        button.style.pointerEvents =
+            "";
+
+    }
+}
 
 
 // ==============================
 // Tạo Card ứng dụng
 // ==============================
 
-function createAppCard(app) {
+function createAppCard(app, wallpaper = false) {
 
     const card =
         document.createElement("div");
 
     card.className = "card";
-
 
 
     // ==========================
@@ -99,12 +261,22 @@ function createAppCard(app) {
         DEFAULT_THUMBNAIL;
 
 
+    // ==========================
+    // Tên nút
+    // ==========================
+
+    const buttonText =
+        wallpaper
+            ? "⬇ Tải ảnh nền"
+            : "⬇ Tải về";
+
 
     // ==========================
     // HTML Card
     // ==========================
 
     card.innerHTML = `
+
         <div class="thumbnail-box">
 
             <img
@@ -130,18 +302,18 @@ function createAppCard(app) {
                 target="_blank"
                 rel="noopener noreferrer">
 
-                ⬇ Tải về
+                ${buttonText}
 
             </a>
 
         </div>
+
     `;
 
 
-
-    // ==============================
+    // ==========================
     // Lấy phần tử
-    // ==============================
+    // ==========================
 
     const image =
         card.querySelector(".thumbnail");
@@ -150,10 +322,9 @@ function createAppCard(app) {
         card.querySelector(".download");
 
 
-
-    // ==============================
+    // ==========================
     // Xử lý ảnh lỗi
-    // ==============================
+    // ==========================
 
     image.addEventListener(
         "error",
@@ -172,36 +343,66 @@ function createAppCard(app) {
     );
 
 
-
-    // ==============================
-    // Nút Tải về
-    // ==============================
+    // ==========================
+    // Nút tải
+    // ==========================
 
     downloadButton.addEventListener(
         "click",
-        function (event) {
+        async function (event) {
 
-            // Kiểm tra link ứng dụng
+            // Không có link
 
             if (!app.file) {
 
                 event.preventDefault();
 
                 alert(
-                    "Ứng dụng này chưa có liên kết tải xuống."
+                    wallpaper
+                        ? "Ảnh nền này chưa có liên kết tải xuống."
+                        : "Ứng dụng này chưa có liên kết tải xuống."
                 );
 
                 return;
             }
 
+
+            // ==========================
+            // Nếu là ảnh nền
+            // ==========================
+
+            if (wallpaper) {
+
+                // Không cho mở link
+
+                event.preventDefault();
+
+
+                // Tải trực tiếp
+
+                await downloadWallpaper(
+                    app.file,
+                    downloadButton
+                );
+
+
+                return;
+            }
+
+
+            // ==========================
+            // Nếu là ứng dụng
+            // ==========================
+
+            // Không preventDefault
+            // để trình duyệt mở link bình thường
+
         }
     );
 
 
-
     return card;
 }
-
 
 
 // ==============================
@@ -215,7 +416,6 @@ function renderApps(data) {
     let hasResult = false;
 
 
-
     // ==============================
     // Duyệt danh mục
     // ==============================
@@ -227,9 +427,19 @@ function renderApps(data) {
             !Array.isArray(category.apps) ||
             category.apps.length === 0
         ) {
+
             return;
         }
 
+
+        // ==========================
+        // Kiểm tra category ảnh nền
+        // ==========================
+
+        const wallpaper =
+            isWallpaperCategory(
+                category.category
+            );
 
 
         // ==========================
@@ -243,20 +453,19 @@ function renderApps(data) {
             "category";
 
 
-
         section.innerHTML = `
+
             <h2 class="category-title">
                 ${escapeHTML(category.category)}
             </h2>
 
             <div class="grid"></div>
-        `;
 
+        `;
 
 
         const grid =
             section.querySelector(".grid");
-
 
 
         // ==========================
@@ -269,18 +478,19 @@ function renderApps(data) {
                 !app ||
                 !app.name
             ) {
+
                 return;
             }
-
 
 
             hasResult = true;
 
 
-
             const card =
-                createAppCard(app);
-
+                createAppCard(
+                    app,
+                    wallpaper
+                );
 
 
             grid.appendChild(card);
@@ -288,19 +498,21 @@ function renderApps(data) {
         });
 
 
+        // ==========================
+        // Thêm category
+        // ==========================
 
-        // Chỉ thêm category
-        // nếu có ứng dụng
-
-        if (grid.children.length > 0) {
+        if (
+            grid.children.length > 0
+        ) {
 
             container.appendChild(
                 section
             );
+
         }
 
     });
-
 
 
     // ==============================
@@ -310,6 +522,7 @@ function renderApps(data) {
     if (!hasResult) {
 
         container.innerHTML = `
+
             <div class="empty">
 
                 <div class="empty-icon">
@@ -325,10 +538,12 @@ function renderApps(data) {
                 </div>
 
             </div>
-        `;
-    }
-}
 
+        `;
+
+    }
+
+}
 
 
 // ==============================
@@ -347,7 +562,6 @@ if (searchInput) {
                     .trim();
 
 
-
             // ==========================
             // Không nhập từ khóa
             // ==========================
@@ -362,42 +576,43 @@ if (searchInput) {
             }
 
 
-
             // ==========================
             // Lọc ứng dụng
             // ==========================
 
             const filtered =
-                appData.map(category => {
+                appData.map(
+                    category => {
 
-                    return {
+                        return {
 
-                        category:
-                            category.category,
+                            category:
+                                category.category,
 
-                        apps:
-                            Array.isArray(
-                                category.apps
-                            )
-                                ? category.apps.filter(
-                                    app => {
-
-                                        const name =
-                                            String(
-                                                app.name || ""
-                                            ).toLowerCase();
-
-                                        return name.includes(
-                                            keyword
-                                        );
-                                    }
+                            apps:
+                                Array.isArray(
+                                    category.apps
                                 )
-                                : []
+                                    ? category.apps.filter(
+                                        app => {
 
-                    };
+                                            const name =
+                                                String(
+                                                    app.name || ""
+                                                ).toLowerCase();
 
-                });
+                                            return name.includes(
+                                                keyword
+                                            );
 
+                                        }
+                                    )
+                                    : []
+
+                        };
+
+                    }
+                );
 
 
             renderApps(
@@ -406,8 +621,8 @@ if (searchInput) {
 
         }
     );
-}
 
+}
 
 
 // ==============================
@@ -419,10 +634,11 @@ async function loadApps() {
     try {
 
         // ==========================
-        // Hiển thị loading
+        // Loading
         // ==========================
 
         container.innerHTML = `
+
             <div class="loading">
 
                 <div class="loading-spinner"></div>
@@ -432,8 +648,8 @@ async function loadApps() {
                 </div>
 
             </div>
-        `;
 
+        `;
 
 
         // ==========================
@@ -449,23 +665,21 @@ async function loadApps() {
             );
 
 
-
         if (!response.ok) {
 
             throw new Error(
                 `Không thể đọc apps.json (${response.status})`
             );
+
         }
 
 
-
         // ==========================
-        // Chuyển sang JSON
+        // Chuyển JSON
         // ==========================
 
         const json =
             await response.json();
-
 
 
         // ==========================
@@ -496,18 +710,17 @@ async function loadApps() {
             throw new Error(
                 "Cấu trúc apps.json không hợp lệ"
             );
+
         }
 
 
-
         // ==========================
-        // Hiển thị ứng dụng
+        // Hiển thị
         // ==========================
 
         renderApps(
             appData
         );
-
 
 
     } catch (error) {
@@ -518,12 +731,12 @@ async function loadApps() {
         );
 
 
-
         // ==========================
         // Hiển thị lỗi
         // ==========================
 
         container.innerHTML = `
+
             <div class="empty error">
 
                 <div class="empty-icon">
@@ -539,10 +752,12 @@ async function loadApps() {
                 </div>
 
             </div>
-        `;
-    }
-}
 
+        `;
+
+    }
+
+}
 
 
 // ==============================
