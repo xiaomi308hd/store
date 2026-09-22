@@ -174,7 +174,7 @@ body {
 
     font-size: 17px;
 
-    font-weight: 400;
+    font-weight: 500;
 
     line-height: 1.6;
 
@@ -199,7 +199,7 @@ body {
 
     font-size: 17px;
 
-    font-weight: 600;
+    font-weight: 500;
 
     line-height: 1.6;
 
@@ -210,6 +210,28 @@ body {
     text-align: center;
 }
 
+/* ==================================================
+   WEBSITE
+   ================================================== */
+
+.website {
+    font-family:
+        "Be Vietnam Pro",
+        Arial,
+        sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    line-height: 1.6;
+
+    color: #ffffff;
+
+    margin: 0;
+
+    text-align: center;
+}
 
 /* ==================================================
    SEARCH BOX
