@@ -90,6 +90,16 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vietplay.apk"
       },
       {
+        "name": "VTV Go",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/VTVgo.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/VTVgoTV.apk"
+      },
+      {
+        "name": "TV360",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/TV360.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/TV360.apk"
+      },
+      {
         "name": "FPT Play",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/fpt.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/fptplay.apk"
@@ -157,6 +167,11 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/getout.apk"
       },
       {
+        "name": "Lậu TV",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/LauTV.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/LauTV.apk"
+      },
+      {
         "name": "Lập Tình TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/laptinh.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/laptinhtv.apk"
@@ -191,6 +206,11 @@
         "name": "Yoosee TV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/yoosee.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/yoosee.apk"
+      },
+      {
+        "name": "HiK Connect TV",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/HikConnect.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/HikConnect.apk"
       },
       {
         "name": "Ezviz TV",
