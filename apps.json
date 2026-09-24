@@ -4,7 +4,7 @@
     "apps": [
       {
         "name": "Ms Store",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/mstore2.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Mstore2.png"",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/mstore.apk"
       },
       {
@@ -40,12 +40,12 @@
     "apps": [
       {
         "name": "TizenTube TV Quốc Tế",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Youtube.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/TizenTube.apk"
       },
       {
         "name": "YouTube TV Nội Địa",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Youtube.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/youtube.apk"
       },
       {
@@ -55,7 +55,7 @@
       },
       {
         "name": "YouTube TV Adr5-6 ",
-          "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/youtube.png",
+          "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Youtube.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/youtube-adr5-6.apk"
       }     
     ]
@@ -81,7 +81,7 @@
       },
       {
         "name": "XemTV",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/xemtv.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/XemTv.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/XemTV_v5.8.8.apk"
       },
       {
@@ -111,7 +111,7 @@
       },
       {
         "name": "M3U-Adr5",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/m3u.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/M3u.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/m3u.apk"
       }
     ]
@@ -147,7 +147,7 @@
       },
       {
         "name": "Netflix (Cần sử dụng chuột)",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/netflix.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Netflix.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/netflix.apk"
       },
       {
