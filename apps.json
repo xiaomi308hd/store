@@ -199,12 +199,12 @@
     "apps": [
       {
         "name": "Imou TV",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/imou.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Imou.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/imou.apk"
       },
       {
         "name": "Yoosee TV",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/yoosee.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Yoosee.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/yoosee.apk"
       },
       {
@@ -214,7 +214,7 @@
       },
       {
         "name": "Ezviz TV",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/ezviz.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/Ezviz.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/ezviz.apk"
       }
     ]
@@ -245,7 +245,7 @@
       },
       {
         "name": "Cốc Cốc TV",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/coccoc.png",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/coccoc.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/coccoc.apk"
       },
       {
