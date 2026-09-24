@@ -266,43 +266,43 @@
     "apps": [
       {
         "name": "Ảnh 1",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338246_7929906606184301816_7929906606184301816_60105fa3c9ae8238d7587889eaf8f698.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338246_7929906606184301816_7929906606184301816_60105fa3c9ae8238d7587889eaf8f698.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/1.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338246_7929906606184301816_7929906606184301816_60105fa3c9ae8238d7587889eaf8f698.jpg"
       },
        {
         "name": "Ảnh 2",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338271_7929906606184301816_7929906606184301816_07b3edb93f238e61cfa3f043d1791fa7.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338271_7929906606184301816_7929906606184301816_07b3edb93f238e61cfa3f043d1791fa7.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/2.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338271_7929906606184301816_7929906606184301816_07b3edb93f238e61cfa3f043d1791fa7.jpg"
       },
        {
         "name": "Ảnh 3",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338296_7929906606184301816_7929906606184301816_075595b19ba0526cc0793cf4c729dbab.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338296_7929906606184301816_7929906606184301816_075595b19ba0526cc0793cf4c729dbab.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/3.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338296_7929906606184301816_7929906606184301816_075595b19ba0526cc0793cf4c729dbab.jpg"
       },
        {
         "name": "Ảnh 4",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338323_7929906606184301816_7929906606184301816_7ba744953915605161c075d537dbbe8a.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338323_7929906606184301816_7929906606184301816_7ba744953915605161c075d537dbbe8a.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/4.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338349_7929906606184301816_7929906606184301816_f5b422768579930a15f706d115a58a38.jpg"
       },
        {
         "name": "Ảnh 5",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338349_7929906606184301816_7929906606184301816_f5b422768579930a15f706d115a58a38.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338349_7929906606184301816_7929906606184301816_f5b422768579930a15f706d115a58a38.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/5.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338376_7929906606184301816_7929906606184301816_40350f25ceff78e9b624ebad4f45b4e4.jpg"
       },
        {
         "name": "Ảnh 6",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338376_7929906606184301816_7929906606184301816_40350f25ceff78e9b624ebad4f45b4e4.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338376_7929906606184301816_7929906606184301816_40350f25ceff78e9b624ebad4f45b4e4.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/6.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338323_7929906606184301816_7929906606184301816_7ba744953915605161c075d537dbbe8a.jpg"
       },
        {
         "name": "Ảnh 7",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338400_7929906606184301816_7929906606184301816_eea463f199f0719172166b129cc69d91.jpg",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/1790067338400_7929906606184301816_7929906606184301816_eea463f199f0719172166b129cc69d91.jpg"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/7.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/1790067338400_7929906606184301816_7929906606184301816_eea463f199f0719172166b129cc69d91.jpg"
       },
        {
         "name": "Ảnh 8",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/la co VN.png",
-        "file": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/la co VN.png"
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/hinh-nen/main/8.png",
+        "file": "https://github.com/xiaomi308hd/hinh-nen/releases/download/v1/la co VN.png"
       }
     ]
   }
