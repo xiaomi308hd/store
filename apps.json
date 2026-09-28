@@ -90,6 +90,16 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/VTVgoTV.apk"
       },
       {
+        "name": "VTV Prime",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/vtvprime.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vtvprime.apk"
+      },
+      {
+        "name": "MyTV",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/mytv.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/mytv.apk"
+      },
+      {
         "name": "TV360",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/TV360.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/TV360.apk"
