@@ -75,6 +75,11 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/miprotv.apk"
       },
       {
+        "name": "VietMi TV",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/vietmitv.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vietmitv_v21.apk"
+      },
+      {
         "name": "XemTV",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/XemTv.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/XemTV_v5.8.8.apk"
