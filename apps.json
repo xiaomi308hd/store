@@ -156,6 +156,11 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/netflix.apk"
       },
       {
+        "name": "VXM Karaoke",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/vxm-karaoke.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/karaoke.apk"
+      },
+      {
         "name": "Tiktok AndroidTV",
         "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/tiktok.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/tiktoklite.apk"
@@ -259,9 +264,9 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/Zoom.apk"
       },
       {
-        "name": "Super Voice",
-        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/supervoice.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/supervoice.apk"
+        "name": "Google Voice",
+        "thumbnail": "https://raw.githubusercontent.com/guiterhd-bit/mihdtv/main/ggvoice.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/ggvoice.apk"
       }
     ]
   },
