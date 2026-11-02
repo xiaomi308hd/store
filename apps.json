@@ -18,9 +18,9 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/SMihomeStore.apk"
       },
       {
-        "name": "Movie Legend Store",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/mobilelegend.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/mlstore.apk"
+        "name": "Việt Store",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/vietstore.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vxmstore.apk"
       },
       {
         "name": "Beecube Store",
@@ -131,14 +131,14 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/chophim.apk"
       },
       {
-        "name": "Hi Phim TV",
+        "name": "Hi Phim",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/hiphim.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/hiphimtv.apk"
       },
       {
-        "name": "Nét Căng TV",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/netcang.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/N%C3%A9t%20C%C4%83ng.apk"
+        "name": "Mê Phim",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/mephim.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/MePhimTV.apk"
       },
       {
         "name": "Netflix (Cần sử dụng chuột)",
@@ -149,6 +149,11 @@
         "name": "VXM Karaoke",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/vxm-karaoke.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/karaoke.apk"
+      },
+      {
+        "name": "Net Karaoke",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/netkaraoke.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/net-karaoke.apk"
       },
       {
         "name": "Tiktok AndroidTV",
