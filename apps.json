@@ -167,6 +167,11 @@
     "category": "⚽️ Ứng dụng Thể Thao",
     "apps": [
       {
+        "name": "MHD Sports",
+        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/mhd-sports.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/MhdSports.apk"
+      },
+      {
         "name": "Get Out",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/getout.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/getout.apk"
