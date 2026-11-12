@@ -57,7 +57,7 @@
       {
         "name": "MiHD TV",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/mihdtv.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/MiHDTV.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/mitv.apk"
       },
       {
         "name": "MiHDTV Google TV",
@@ -67,7 +67,7 @@
       {
         "name": "VietMi TV",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/vietmitv.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vietmitv_v21.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/vietmitv.apk"
       },
       {
         "name": "XemTV",
@@ -115,11 +115,6 @@
   {
     "category": "🎬 Ứng dụng Giải Trí",
     "apps": [
-      {
-        "name": "Phim 4K",
-        "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/phim4k.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/phim4k.apk"
-      },
       {
         "name": "Hiếu Gà Phim",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/hieugaphim.png",
@@ -169,7 +164,7 @@
       {
         "name": "MHD Sports",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/mhd-sports.png",
-        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/MhdSports.apk"
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/misp.apk"
       },
       {
         "name": "Get Out",
