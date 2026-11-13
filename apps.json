@@ -121,6 +121,11 @@
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/hieugaphimTV.apk"
       },
       {
+        "name": "Rạp Phim",
+         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/rapphim.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/rapphim.apk"
+      },
+      {
         "name": "Chợ Phim",
          "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/chophim.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/chophim.apk"
@@ -129,6 +134,11 @@
         "name": "Film 4K",
         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/film4k.png",
         "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/Film4k.apk"
+      },
+      {
+        "name": "NVC Phim",
+         "thumbnail": "https://raw.githubusercontent.com/xiaomi308hd/thumbnail/main/nvc.png",
+        "file": "https://github.com/xiaomi308hd/apps/raw/refs/heads/main/NVC.apk"
       },
       {
         "name": "Mê Phim",
